@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor0: white;
+    --cor3: #FFB347; /*sol*/
+    --cor4: #FF8A80; /*sol*/
+    --cor5: #78909C; /*nublado*/
+    --cor6: #607D8B; /*nublado*/
+    --cor7: #8a969f; /*antartica*/
+    --cor8: #A0522D; /*antartica*/
+    --cor9: #4A4A4A; /*gelo*/
+    --cor10: #ADD8E6; /*gelo*/
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+/* Estilos Gerais (aplicados a todas as páginas) */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    width: 100vw;
+}
+
+body {
+        min-height: 100vh;
+        text-align: center;
+        color: var(--cor0);
+}
+
+main {
+    min-height: 100vh;
+  }
+
+header{
+    min-height: 150px;
+    padding-top: 30px;
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    color: var(--cor0);
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.315);
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
+.botao-oficial {
+    margin-top: 20px;
+    padding-top: 0px;
+    text-align: center;
+}
+
+.botao-oficial img {
+    width: 50px;
+    margin: 0px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+}
+
+.botao-oficial img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.611);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.622);
+    transition: transform 0.5s;
+}
+
+footer{
+    color: var(--cor0);
+    text-align: center;
+    font-size: 0.9em;
+    padding-bottom: 0px;
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer a {
+    color: var(--cor0);
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor0);
+}
+
+/* Estilos Específicos por Página */
+html.sol {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    }
+    
+html.nublado {
+    background-image: linear-gradient(to bottom, var(--cor5), var(--cor6));
+    }
+    
+html.antartica {
+    background-image: linear-gradient(to bottom, var(--cor7), var(--cor8));
+    }
+    
+html.gelo {
+    background-image: linear-gradient(to bottom, var(--cor9), var(--cor10));
+    }
+
+footer.sol {
+    background-color: var(--cor4);
+}
+
+footer.nublado {
+    background-color: var(--cor6);
+}
+
+footer.antartica {
+    background-color: var(--cor8);
+}
+
+footer.gelo {
+    background-color: var(--cor10);
+}
+
+
+/* Responsividade: Telas com largura máxima de 768px (tablets) */
+@media (max-width: 768px) {
+    header > h1 {
+        font-size: 3em;
+        padding-bottom: 15px;
+    }
+}
+
+/* Responsividade: Telas com largura máxima de 480px (smartphones) */
+@media (max-width: 480px) {
+    header > h1 {
+        font-size: 2em;
+    }
+}
+
