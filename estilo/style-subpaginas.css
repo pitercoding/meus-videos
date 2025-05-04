@@ -53,10 +53,10 @@ header > h1 {
 
 header > p {
     font-family: var(--fonte-padrao);
+    text-align: justify;
+    text-indent: 30px;
     font-size: 1.2em;
     max-width: 600px;
-    padding-right: 10px;
-    padding-left: 10px;
     margin: auto;
     margin-bottom: 30px;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.315);
@@ -68,14 +68,16 @@ iframe {
 }
 
 .botao-oficial {
+    font-size: 1.2em;
     margin-top: 20px;
+    margin-bottom: 20px;
     padding-top: 0px;
     text-align: center;
 }
 
 .botao-oficial img {
     width: 50px;
-    margin: 0px;
+    margin-top: 20px;
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
