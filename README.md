@@ -44,7 +44,7 @@ meus-videos/
 
 1.  **Clone o repositório:**
     ```bash
-    git clone <URL_DO_SEU_REPOSITORIO>
+    git clone https://pitercoding.github.io/meus-videos/
     cd meu-site-gopro
     ```
 
